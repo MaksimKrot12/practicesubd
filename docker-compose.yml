@@ -1,0 +1,15 @@
+#Конфигурация докер-файла  
+    
+    version: '3'
+    
+    services:
+      db:
+        build:
+          context: .
+        environment:
+          POSTGRES_DB: eurotrack
+          POSTGRES_USER: annfil
+          POSTGRES_PASSWORD: 111111
+        ports:
+          - "5432:5432"
+    
